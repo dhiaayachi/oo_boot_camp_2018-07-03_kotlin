@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d2c6f941-b710-48c7-973e-138a39145e55" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/imperial_volume/Volume.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/volume/Volume.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/imperial_volume/VolumeTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/test/volume/VolumeTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/volume/Volume.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/volume/Volume.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/volume/VolumeTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/test/volume/VolumeTest.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,7 +19,7 @@
       <file leaf-file-name="ChanceTest.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/unit/ChanceTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
+            <state relative-caret-position="675">
               <caret line="51" selection-start-line="51" selection-end-line="51" />
               <folding>
                 <element signature="e#155#251#0" expanded="true" />
@@ -32,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/src/chance/Chance.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="23" column="51" lean-forward="true" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
+              <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -40,8 +40,8 @@
       <file leaf-file-name="Volume.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/volume/Volume.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            <state relative-caret-position="45">
+              <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -50,9 +50,9 @@
         <entry file="file://$PROJECT_DIR$/test/volume/VolumeTest.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+              <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
               <folding>
-                <element signature="e#25#100#0" expanded="true" />
+                <element signature="e#16#126#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,6 +93,7 @@
         <option value="$PROJECT_DIR$/src/imperial_volume/ImperialVolume.kt" />
         <option value="$PROJECT_DIR$/src/imperial_volume/Volume.kt" />
         <option value="$PROJECT_DIR$/src/volume/Volume.kt" />
+        <option value="$PROJECT_DIR$/test/volume/VolumeTest.kt" />
       </list>
     </option>
   </component>
@@ -105,11 +106,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="469" />
-    <option name="y" value="70" />
-    <option name="width" value="2730" />
-    <option name="height" value="1659" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -119,8 +118,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -142,7 +139,19 @@
             <path>
               <item name="oo_boot_camp_2018-07-03_kotlin" type="b2602c69:ProjectViewProjectNode" />
               <item name="oo_boot_camp_2018-07-03_kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="volume" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="unit" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="oo_boot_camp_2018-07-03_kotlin" type="b2602c69:ProjectViewProjectNode" />
@@ -154,6 +163,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -162,6 +173,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="C:/Program Files/nodejs/node.exe" />
@@ -170,7 +182,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -193,78 +205,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ImperialVolumeTest">
+  <component name="RunManager" selected="JUnit.VolumeTest.invalid">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="ChanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="oo_boot_camp_2018-07-03_kotlin" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="unit.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="unit" />
-      <option name="MAIN_CLASS_NAME" value="unit.ChanceTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="ChanceTest.and" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="oo_boot_camp_2018-07-03_kotlin" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="unit.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="unit" />
-      <option name="MAIN_CLASS_NAME" value="unit.ChanceTest" />
-      <option name="METHOD_NAME" value="and" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="ChanceTest.or" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="oo_boot_camp_2018-07-03_kotlin" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="unit.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="unit" />
-      <option name="MAIN_CLASS_NAME" value="unit.ChanceTest" />
-      <option name="METHOD_NAME" value="or" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
     </configuration>
     <configuration name="VolumeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="oo_boot_camp_2018-07-03_kotlin" />
@@ -289,6 +232,29 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="VolumeTest.divide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oo_boot_camp_2018-07-03_kotlin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="volume.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="volume" />
+      <option name="MAIN_CLASS_NAME" value="volume.VolumeTest" />
+      <option name="METHOD_NAME" value="divide" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
     <configuration name="VolumeTest.equals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="oo_boot_camp_2018-07-03_kotlin" />
       <extension name="coverage">
@@ -302,6 +268,52 @@
       <option name="PACKAGE_NAME" value="volume" />
       <option name="MAIN_CLASS_NAME" value="volume.VolumeTest" />
       <option name="METHOD_NAME" value="equals" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="VolumeTest.invalid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oo_boot_camp_2018-07-03_kotlin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="volume.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="volume" />
+      <option name="MAIN_CLASS_NAME" value="volume.VolumeTest" />
+      <option name="METHOD_NAME" value="invalid" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="VolumeTest.substract" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oo_boot_camp_2018-07-03_kotlin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="volume.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="volume" />
+      <option name="MAIN_CLASS_NAME" value="volume.VolumeTest" />
+      <option name="METHOD_NAME" value="substract" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -351,19 +363,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.ChanceTest.or" />
-      <item itemvalue="JUnit.ChanceTest" />
-      <item itemvalue="JUnit.ChanceTest.and" />
-      <item itemvalue="JUnit.ImperialVolumeTest.equals" />
-      <item itemvalue="JUnit.ImperialVolumeTest" />
+      <item itemvalue="JUnit.VolumeTest" />
+      <item itemvalue="JUnit.VolumeTest.equals" />
+      <item itemvalue="JUnit.VolumeTest.invalid" />
+      <item itemvalue="JUnit.VolumeTest.substract" />
+      <item itemvalue="JUnit.VolumeTest.divide" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ImperialVolumeTest" />
-        <item itemvalue="JUnit.ImperialVolumeTest.equals" />
-        <item itemvalue="JUnit.ChanceTest.or" />
-        <item itemvalue="JUnit.ChanceTest.and" />
-        <item itemvalue="JUnit.ChanceTest" />
+        <item itemvalue="JUnit.VolumeTest.invalid" />
+        <item itemvalue="JUnit.VolumeTest.divide" />
+        <item itemvalue="JUnit.VolumeTest" />
+        <item itemvalue="JUnit.VolumeTest.substract" />
+        <item itemvalue="JUnit.VolumeTest.equals" />
       </list>
     </recent_temporary>
   </component>
@@ -377,7 +389,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1530714913321</updated>
-      <workItem from="1530714916002" duration="11265000" />
+      <workItem from="1530714916002" duration="16231000" />
+      <workItem from="1530806211050" duration="264000" />
     </task>
     <task id="LOCAL-00001" summary="Add Volume use case">
       <created>1530751593419</created>
@@ -386,99 +399,85 @@
       <option name="project" value="LOCAL" />
       <updated>1530751593419</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="rename volume package">
+      <created>1530751634390</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1530751634390</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ImperialVolumeTest_equals - 2018.07.04 at 14h 48m 05s.xml">
-      <configuration name="ImperialVolumeTest.equals" configurationId="JUnit" />
+    <history-entry file="VolumeTest_invalid - 2018.07.05 at 11h 22m 24s.xml">
+      <configuration name="VolumeTest.invalid" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ImperialVolumeTest - 2018.07.04 at 14h 50m 51s.xml">
-      <configuration name="ImperialVolumeTest" configurationId="JUnit" />
+    <history-entry file="VolumeTest_substract - 2018.07.05 at 11h 26m 21s.xml">
+      <configuration name="VolumeTest.substract" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ImperialVolumeTest_equals - 2018.07.04 at 14h 51m 27s.xml">
-      <configuration name="ImperialVolumeTest.equals" configurationId="JUnit" />
+    <history-entry file="VolumeTest - 2018.07.05 at 11h 26m 31s.xml">
+      <configuration name="VolumeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ImperialVolumeTest - 2018.07.04 at 14h 52m 32s.xml">
-      <configuration name="ImperialVolumeTest" configurationId="JUnit" />
+    <history-entry file="VolumeTest_invalid - 2018.07.05 at 11h 27m 32s.xml">
+      <configuration name="VolumeTest.invalid" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ImperialVolumeTest_equals - 2018.07.04 at 14h 53m 52s.xml">
-      <configuration name="ImperialVolumeTest.equals" configurationId="JUnit" />
+    <history-entry file="VolumeTest_substract - 2018.07.05 at 11h 28m 25s.xml">
+      <configuration name="VolumeTest.substract" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ImperialVolumeTest_equals - 2018.07.04 at 15h 01m 00s.xml">
-      <configuration name="ImperialVolumeTest.equals" configurationId="JUnit" />
+    <history-entry file="VolumeTest - 2018.07.05 at 11h 30m 22s.xml">
+      <configuration name="VolumeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ImperialVolumeTest_equals - 2018.07.04 at 15h 02m 13s.xml">
-      <configuration name="ImperialVolumeTest.equals" configurationId="JUnit" />
+    <history-entry file="VolumeTest - 2018.07.05 at 11h 30m 53s.xml">
+      <configuration name="VolumeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ImperialVolumeTest_equals - 2018.07.04 at 15h 02m 32s.xml">
-      <configuration name="ImperialVolumeTest.equals" configurationId="JUnit" />
+    <history-entry file="VolumeTest_divide - 2018.07.05 at 11h 31m 12s.xml">
+      <configuration name="VolumeTest.divide" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ImperialVolumeTest_equals - 2018.07.04 at 15h 03m 11s.xml">
-      <configuration name="ImperialVolumeTest.equals" configurationId="JUnit" />
+    <history-entry file="VolumeTest_invalid - 2018.07.05 at 11h 32m 04s.xml">
+      <configuration name="VolumeTest.invalid" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ImperialVolumeTest - 2018.07.04 at 20h 44m 54s.xml">
-      <configuration name="ImperialVolumeTest" configurationId="JUnit" />
+    <history-entry file="ChanceTest_or - 2018.07.05 at 11h 56m 23s.xml">
+      <configuration name="ChanceTest.or" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11265000" />
+    <option name="totallyTimeSpent" value="16495000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4932845" weight="0.32923076" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50671554" side_tool="true" visible="true" weight="0.32923076" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" internal_type="SLIDING" order="2" type="SLIDING" weight="0.3148718" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21306472" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4981685" weight="0.4" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24902976" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" internal_type="SLIDING" order="2" type="SLIDING" weight="0.3298969" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21991481" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="7" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Learn" order="2" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -489,11 +488,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add Volume use case" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Volume use case" />
+    <MESSAGE value="rename volume package" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename volume package" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="12" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -511,6 +511,40 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/test/unit/ChanceTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="e#155#251#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chance/Chance.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="23" column="51" lean-forward="true" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/volume/Volume.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/volume/VolumeTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="27" column="88" selection-start-line="27" selection-start-column="88" selection-end-line="27" selection-end-column="88" />
+          <folding>
+            <element signature="e#16#126#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/unit/ChanceTest.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -694,7 +728,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/unit/ChanceTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
+        <state relative-caret-position="675">
           <caret line="51" selection-start-line="51" selection-end-line="51" />
           <folding>
             <element signature="e#155#251#0" expanded="true" />
@@ -705,24 +739,24 @@
     <entry file="file://$PROJECT_DIR$/src/chance/Chance.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="23" column="51" lean-forward="true" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
+          <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/volume/VolumeTest.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
           <folding>
-            <element signature="e#25#100#0" expanded="true" />
+            <element signature="e#16#126#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/volume/Volume.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        <state relative-caret-position="45">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
         </state>
       </provider>
     </entry>
