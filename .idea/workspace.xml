@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2c6f941-b710-48c7-973e-138a39145e55" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chance/Chance.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/chance/Chance.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/unit/ChanceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/test/unit/ChanceTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imperial_volume/Volume.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/volume/Volume.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/imperial_volume/VolumeTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/test/volume/VolumeTest.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,7 +38,7 @@
         </entry>
       </file>
       <file leaf-file-name="Volume.kt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/imperial_volume/Volume.kt">
+        <entry file="file://$PROJECT_DIR$/src/volume/Volume.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
               <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
@@ -48,7 +47,7 @@
         </entry>
       </file>
       <file leaf-file-name="VolumeTest.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/imperial_volume/VolumeTest.kt">
+        <entry file="file://$PROJECT_DIR$/test/volume/VolumeTest.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
@@ -93,6 +92,7 @@
         <option value="$PROJECT_DIR$/test/imperial_volume/ImperialVolumeTest.kt" />
         <option value="$PROJECT_DIR$/src/imperial_volume/ImperialVolume.kt" />
         <option value="$PROJECT_DIR$/src/imperial_volume/Volume.kt" />
+        <option value="$PROJECT_DIR$/src/volume/Volume.kt" />
       </list>
     </option>
   </component>
@@ -142,25 +142,13 @@
             <path>
               <item name="oo_boot_camp_2018-07-03_kotlin" type="b2602c69:ProjectViewProjectNode" />
               <item name="oo_boot_camp_2018-07-03_kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="rectangle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oo_boot_camp_2018-07-03_kotlin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oo_boot_camp_2018-07-03_kotlin" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="oo_boot_camp_2018-07-03_kotlin" type="b2602c69:ProjectViewProjectNode" />
               <item name="oo_boot_camp_2018-07-03_kotlin" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="imperial_volume" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oo_boot_camp_2018-07-03_kotlin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oo_boot_camp_2018-07-03_kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="unit" type="462c0819:PsiDirectoryNode" />
+              <item name="volume" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -282,14 +270,14 @@
       <module name="oo_boot_camp_2018-07-03_kotlin" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="imperial_volume.*" />
+          <option name="PATTERN" value="volume.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="imperial_volume" />
-      <option name="MAIN_CLASS_NAME" value="imperial_volume.VolumeTest" />
+      <option name="PACKAGE_NAME" value="volume" />
+      <option name="MAIN_CLASS_NAME" value="volume.VolumeTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -305,14 +293,14 @@
       <module name="oo_boot_camp_2018-07-03_kotlin" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="imperial_volume.*" />
+          <option name="PATTERN" value="volume.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="imperial_volume" />
-      <option name="MAIN_CLASS_NAME" value="imperial_volume.VolumeTest" />
+      <option name="PACKAGE_NAME" value="volume" />
+      <option name="MAIN_CLASS_NAME" value="volume.VolumeTest" />
       <option name="METHOD_NAME" value="equals" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -389,8 +377,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1530714913321</updated>
-      <workItem from="1530714916002" duration="11193000" />
+      <workItem from="1530714916002" duration="11265000" />
     </task>
+    <task id="LOCAL-00001" summary="Add Volume use case">
+      <created>1530751593419</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1530751593419</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -426,11 +422,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11193000" />
+    <option name="totallyTimeSpent" value="11265000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -441,12 +436,12 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50671554" side_tool="true" visible="true" weight="0.32923076" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" internal_type="SLIDING" order="2" type="SLIDING" visible="true" weight="0.3148718" />
+      <window_info anchor="bottom" id="Run" internal_type="SLIDING" order="2" type="SLIDING" weight="0.3148718" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21306472" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21306472" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -491,6 +486,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add Volume use case" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Volume use case" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -710,7 +709,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/imperial_volume/VolumeTest.kt">
+    <entry file="file://$PROJECT_DIR$/test/volume/VolumeTest.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
@@ -720,7 +719,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/imperial_volume/Volume.kt">
+    <entry file="file://$PROJECT_DIR$/src/volume/Volume.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />

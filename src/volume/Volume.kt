@@ -1,4 +1,4 @@
-package imperial_volume
+package volume
 
 class Volume(n: Number, units: Units) {
     private val n: Double
