@@ -19,4 +19,8 @@ class Chance(likelihoodAsFraction: Number) {
     override fun hashCode() = fraction.hashCode()
 
     operator fun not() = Chance(certainFraction - fraction)
+    fun or(other: Chance) = Chance(this.fraction + other.fraction - this.and(other).fraction)
+    fun and(other: Chance): Chance {
+        return Chance(this.fraction*other.fraction)
+    }
 }
