@@ -1,33 +1,37 @@
 package volume
 
-class Volume(n: Number, units: Units) {
-    private val n: Double
-    enum class Units(val u: Int) {
-        TEA_SPOON(1),
-        TABLE_SPOON(3 * TEA_SPOON.u),
-        OUNCE(2 * TABLE_SPOON.u),
-        CUP(8 * OUNCE.u),
-        PINT(2 * CUP.u),
-        QUART(2 * PINT.u),
-        GALLON(4 * QUART.u)
-    }
+class Volume(n: Number, private val unit: Unit) {
+    private val quantity = n.toDouble()
 
     init {
-        if (n.toDouble() < 0) throw IllegalArgumentException("Volume must be >= 0")
-        this.n = n.toDouble() * units.u
+        if (this.quantity < 0)
+            throw IllegalArgumentException("Quantity should be >= 0")
     }
 
     override fun equals(other: Any?): Boolean {
         return this === other || other is Volume && this.equals(other)
     }
 
-    private fun equals(other: Volume) = this.n == other.n
+    private fun equals(other: Volume): Boolean {
+        return   this.quantity  == convertedAmount(other)
+    }
 
-    override fun hashCode()= this.n.hashCode()
-    override fun toString() = this.n.toString()
+    private fun convertedAmount(other: Volume) = other.unit.ratio(this.unit) * other.quantity
 
-    operator fun times(i: Number) = Volume(this.n * i.toDouble(), Units.TEA_SPOON)
-    operator fun plus(other: Volume) = Volume(this.n + other.n,Volume.Units.TEA_SPOON)
-    operator fun minus(other: Volume) = Volume(this.n - other.n, Volume.Units.TEA_SPOON)
-    operator fun div(i: Number) = Volume(this.n/i.toDouble(), Units.TEA_SPOON)
+    override fun toString(): String {
+        return quantity.toString()
+    }
+
+    operator fun plus(other: Volume): Volume {
+        return Volume(this.quantity + convertedAmount(other), this.unit)
+    }
+
+    operator fun minus(other: Volume): Volume {
+        return Volume(this.quantity - convertedAmount(other), this.unit)
+
+    }
+
+    override fun hashCode(): Int {
+        return this.quantity.hashCode() + this.unit.hashCode()
+    }
 }

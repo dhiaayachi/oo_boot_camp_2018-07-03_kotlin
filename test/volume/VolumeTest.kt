@@ -5,49 +5,39 @@ import org.junit.jupiter.api.Test
 import kotlin.test.assertFailsWith
 
 internal class VolumeTest {
-    private val tablespoon = Volume(1, Volume.Units.TABLE_SPOON)
-    private val teaspoon = Volume(1, Volume.Units.TEA_SPOON)
-    private val ounce =  Volume(1, Volume.Units.OUNCE)
-    private val cup = Volume(1, Volume.Units.CUP)
-    private val pint = Volume(1, Volume.Units.PINT)
-    private val quart = Volume(1, Volume.Units.QUART)
-    private val gallon = Volume(1, Volume.Units.GALLON)
-
-    private val emptyVolume = Volume(0, Volume.Units.GALLON)
-
     @Test fun equals(){
-        assertEquals(tablespoon, Volume(1, Volume.Units.TABLE_SPOON))
-        assertEquals(gallon * 1.5, Volume(1.5, Volume.Units.GALLON))
-        assertEquals(emptyVolume, Volume(0, Volume.Units.TABLE_SPOON))
-        assertEquals(tablespoon.hashCode(), Volume(1, Volume.Units.TABLE_SPOON).hashCode())
-    }
-    @Test fun invalid(){
-        assertFailsWith<IllegalArgumentException> { Volume(-1, Volume.Units.QUART) }
-        assertFailsWith<IllegalArgumentException> { Volume(1, Volume.Units.QUART) * -1.5 }
-        assertFailsWith<IllegalArgumentException> { Volume(1, Volume.Units.QUART) - (gallon * 1.5) }
-        assertFailsWith<IllegalArgumentException> { Volume(1, Volume.Units.QUART) / -1 }
+        assertEquals(Volume(0.5, Unit.cup), Volume(0.5, Unit.cup))
+        assertNotEquals(Volume(0.5, Unit.cup), Volume(1, Unit.cup))
+        assertEquals(Volume(0.5, Unit.pint), Volume(1, Unit.cup))
+        assertEquals(Volume(3, Unit.teaspoon), Volume(1, Unit.tablespoon))
+        assertEquals(Volume(1, Unit.gallon), Volume(8, Unit.pint))
+        assertEquals(Volume(1, Unit.quart), Volume(2, Unit.pint))
+        assertEquals(Volume(1, Unit.cup), Volume(8, Unit.ounce))
+        assertEquals(Volume(3, Unit.cup), Volume(8*2*3, Unit.tablespoon))
+
     }
 
-    @Test fun conversion() {
-        assertEquals(tablespoon, teaspoon * 3)
-        assertEquals(ounce, tablespoon * 2)
-        assertEquals(cup, ounce * 8)
-        assertEquals(pint, cup * 2)
-        assertEquals(quart, pint * 2)
-        assertEquals(gallon, quart * 4)
+    @Test fun invalid() {
+        assertFailsWith<IllegalArgumentException> { Volume(-2, Unit.pint ) }
+        assertFailsWith<IllegalArgumentException> { Volume(1, Unit.teaspoon) - Volume(1, Unit.cup) }
     }
 
-    @Test fun add() {
-        assertEquals(tablespoon + teaspoon, teaspoon * 4)
+    @Test fun adding() {
+        assertEquals(Volume(2, Unit.cup), Volume(1, Unit.cup) + Volume(1, Unit.cup))
+        assertEquals(Volume(2, Unit.cup), Volume(1, Unit.cup) + Volume(8, Unit.ounce))
+        assertEquals(Volume(0, Unit.teaspoon), Volume(0, Unit.cup) + Volume(0, Unit.quart))
     }
-
     @Test fun substract() {
-        assertEquals(tablespoon - teaspoon, teaspoon * 2)
-        assertEquals(tablespoon - tablespoon, teaspoon * 0)
+        assertEquals(Volume(2, Unit.cup), Volume(3, Unit.cup) - Volume(1, Unit.cup))
+        assertEquals(Volume(0, Unit.cup), Volume(3, Unit.teaspoon) - Volume(1, Unit.tablespoon))
     }
 
-    @Test fun divide() {
-        assertEquals(pint, quart / 2)
-        assertEquals(teaspoon * 0.5, teaspoon / 2)
+    @Test fun hashCodeTest() {
+        assertEquals(Volume(1, Unit.teaspoon).hashCode(), Volume(1, Unit.teaspoon).hashCode())
+        assertNotEquals(Volume(1, Unit.teaspoon).hashCode(), Volume(1, Unit.tablespoon).hashCode())
+        assertEquals(Volume(3, Unit.teaspoon).hashCode(), Volume(1, Unit.tablespoon).hashCode())
+        assertEquals(Volume(3, Unit.cup).hashCode(), Volume(8*2*3, Unit.tablespoon).hashCode())
+        assert(hashSetOf(Volume(3, Unit.teaspoon)).contains(Volume(1, Unit.tablespoon)))
+        assertEquals(Volume(0, Unit.cup).hashCode(), Volume(0, Unit.teaspoon).hashCode())
     }
 }
