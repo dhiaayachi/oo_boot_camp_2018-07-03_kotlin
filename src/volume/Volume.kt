@@ -32,6 +32,6 @@ class Volume(n: Number, private val unit: Unit) {
     }
 
     override fun hashCode(): Int {
-        return this.quantity.hashCode() + this.unit.hashCode()
+        return this.unit.hashCode(quantity)
     }
 }
