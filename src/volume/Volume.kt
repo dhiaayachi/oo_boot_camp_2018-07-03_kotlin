@@ -1,7 +1,7 @@
 package volume
 
-class Volume(n: Number, private val unit: Unit) {
-    private val quantity = n.toDouble()
+class Volume(n: Number, unit: Unit) {
+    private val quantity = n.toDouble() * unit.ratio(Unit.teaspoon)
 
     init {
         if (this.quantity < 0)
@@ -13,25 +13,23 @@ class Volume(n: Number, private val unit: Unit) {
     }
 
     private fun equals(other: Volume): Boolean {
-        return   this.quantity  == convertedAmount(other)
+        return   this.quantity  == other.quantity
     }
-
-    private fun convertedAmount(other: Volume) = other.unit.ratio(this.unit) * other.quantity
 
     override fun toString(): String {
         return quantity.toString()
     }
 
     operator fun plus(other: Volume): Volume {
-        return Volume(this.quantity + convertedAmount(other), this.unit)
+        return Volume(this.quantity + other.quantity, Unit.teaspoon)
     }
 
     operator fun minus(other: Volume): Volume {
-        return Volume(this.quantity - convertedAmount(other), this.unit)
+        return Volume(this.quantity - other.quantity, Unit.teaspoon)
 
     }
 
     override fun hashCode(): Int {
-        return this.unit.hashCode(quantity)
+        return this.quantity.hashCode()
     }
 }
